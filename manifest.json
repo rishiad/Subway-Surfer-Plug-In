@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Miniplayer",
+    "name": "ECHO360 Subway Surfer Plug In",
     "version": "1.0",
-    "description": "Adds a miniplayer interface for YouTube videos",
+    "description": "This utility allows you to pay attention to your lectures.",
     "icons": 
       {
         "128": "icon.png"
