@@ -20,14 +20,30 @@ miniplayer.innerHTML = `
   <style>
   .miniplayer {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     right: 0;
     background-color: white;
-    z-index: 9999;
+    z-index: 1000;
   }
 </style>
 `;
-        document.querySelector(".media-screen").appendChild(miniplayer);
+         document.getElementById("content-wrapper").appendChild(miniplayer);
+
       }
     });
   })
+
+document.getElementsByTagName("button")[0].addEventListener("click", () => {
+    chrome.tabs.query({
+        currentWindow: true,
+        active: true,
+      }).then((tab) => { 
+        console.log(tab)
+        chrome.scripting.executeScript({
+          target: {tabId: tab[0].id},
+          function: () => {
+             document.getElementById("miniplayer").parentNode.removeChild(document.getElementById("miniplayer"));
+          }
+        });
+      })
+})
