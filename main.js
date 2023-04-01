@@ -27,7 +27,7 @@ miniplayer.innerHTML = `
   }
 </style>
 `;
-        document.body.appendChild(miniplayer);
+        document.querySelector(".media-screen").appendChild(miniplayer);
       }
     });
   })
