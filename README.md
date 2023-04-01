@@ -1,5 +1,5 @@
 # ECHO360 Subway Surfer Plug In
-This utility allows you to pay attention to your lectures. 
+This utility allows you to pay attention to your lectures. Also Dark Mode
 
 ## Installation
 
