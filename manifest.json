@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Miniplayer",
+    "version": "1.0",
+    "description": "Adds a miniplayer interface for YouTube videos",
+    "icons": 
+      {
+        "128": "icon.png"
+      },
+    "content_scripts": [
+      {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["main.js"]
+      }
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs",
+      "storage"
+    ],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "ADHD",
+        "default_popup": "index.html"
+      }
+  }
+  
